@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fec5bb;
+}
+
+h1{
+    text-align: center;
+    font-family: monospace;
+    margin: 100px 0 1000 0px;
+    font-size: 80px;
+    color: #d8e2dc;
+}
+
+#surround{
+    border: solid;
+    border-radius: 10px;
+    border-color: #d8e2dc;
+    height: 750px;
+    width: 700px;
+    margin: auto;
+    display: flex;
+}
+
+.general{
+    border: solid;
+    border-radius: 10px;
+    border-color: #466365;
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    margin: auto;
+}
+
+.spec{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+#box1{
+    background-color: #e8e8e4;
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+}
+
+#box1:hover{
+    transform: translate(50px);
+}
+
+#box2{
+    background-color: #d8e2dc;
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+}
+
+#box2:hover{
+    transform: scale(2);
+}
+
+#box3{
+    background-color: #f8edeb;
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+}
+
+#box3:hover{
+    transform: rotate(180deg);
+}
+
+#box4{
+    background-color: #f8edeb;
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+}
+
+#box4:hover{
+    transform: rotateZ(180deg);
+}
+
+#box5{
+    background-color: #e8e8e4;
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+}
+
+#box5:hover{
+    transform: skewY(90deg);
+}
+
+#box6{
+    background-color: #d8e2dc;
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+}
+
+#box6:hover{
+    background-color: aqua;
+}
+
+#box7{
+    background-color: #d8e2dc;
+}
+
+#box7:hover{
+    animation-name: move;
+    animation-duration: 2s;
+}
+@keyframes move {
+  from {transform: translateX(20px);}
+  to {transform: translateX(700px;)}
+}
+
+
+#box8{
+    background-color: #f8edeb;
+}
+
+#box8:hover{
+    animation-name: change;
+    animation-duration: 4s;
+}
+
+@keyframes change {
+  from {background-color: #f8edeb; transform: translateY(-50px);}
+  to {background-color: aquamarine; transform: translateY(10px;)}
+}
+
+#box9{
+    background-color: #e8e8e4;
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+}
+
+#box9:hover{
+    transform: scale(2);
+    background-color: aqua;
+}
